@@ -1,35 +1,103 @@
+/* 🌈 Global Styling */
 body {
-  font-family: sans-serif;
-  background-color: #eef2f3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
   display: flex;
   justify-content: center;
-  padding: 40px;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
+/* 📦 Container Glass Card */
 .container {
-  background: white;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   padding: 30px;
-  border-radius: 8px;
-  width: 400px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 420px;
+  color: #fff;
 }
 
+/* 📝 Header */
+.container h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+/* 🔍 Form */
 form {
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
 input[type="text"] {
   flex: 1;
-  padding: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
 }
 
 button {
-  padding: 8px 12px;
+  padding: 10px 16px;
+  background: #ffffff;
+  color: #0077ff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #0077ff;
+  color: #fff;
+}
+
+/* 📊 Weather Result */
+#weatherResult {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#weatherResult h2 {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+#weatherResult p {
+  margin: 4px 0;
+  font-size: 16px;
 }
 
 #weatherResult img {
-  width: 80px;
+  width: 100px;
+}
+
+/* 📜 History List */
+h3 {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+#historyList {
+  list-style: none;
+  padding: 0;
+}
+
+#historyList li {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 6px 0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #ffffff;
 }
